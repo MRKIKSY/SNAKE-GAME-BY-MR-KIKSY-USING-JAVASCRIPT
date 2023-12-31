@@ -49,16 +49,8 @@ const changeDirection = e => {
 controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
 
 const initGame = () => {
-    
-    const initGame = () => {
     if(gameOver) return handleGameOver();
-    let html = '';
-
-    if (snakeBody.length === 0) {
-        // Display "MR KIKSY SNAKE GAME" on the grid before the game starts
-        html += `<div class="title" style="grid-area: 3 / 8 / span 10 / span 15; color: white; font-size: 2rem;">MR KIKSY SNAKE GAME</div>`;
-    } else {
-        let gameContent = '';
+    let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
 
     // Checking if the snake hit the food
     if(snakeX === foodX && snakeY === foodY) {
