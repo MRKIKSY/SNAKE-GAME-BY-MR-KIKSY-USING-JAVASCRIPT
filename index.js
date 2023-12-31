@@ -24,7 +24,7 @@ const updateFoodPosition = () => {
 const handleGameOver = () => {
     // Clearing the timer and reloading the page on game over
     clearInterval(setIntervalId);
-    alert( MR KIKSY: "Game Over! You are a failure, you can never make it  Press OK if you  AGREE...");
+    alert( " MR KIKSY: Game Over! You are a failure, you can never make it  Press OK if you  AGREE...");
     location.reload();
 }
 
