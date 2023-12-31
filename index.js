@@ -52,7 +52,7 @@ const initGame = () => {
     
     const initGame = () => {
     if(gameOver) return handleGameOver();
-    let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
+    let html = '';
 
     if (snakeBody.length === 0) {
         // Display "MR KIKSY SNAKE GAME" on the grid before the game starts
