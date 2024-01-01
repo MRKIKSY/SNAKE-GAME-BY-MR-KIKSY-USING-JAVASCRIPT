@@ -1,5 +1,6 @@
 /* Import Google font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +8,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-h1{ display: top;
-
+h1 {
+  display: top;
 }
+
 body {
   display: flex;
   align-items: center;
@@ -17,6 +19,7 @@ body {
   min-height: 100vh;
   background: #E3F2FD;
 }
+
 .wrapper {
   width: 65vmin;
   height: 70vmin;
@@ -28,6 +31,7 @@ body {
   background: #293447;
   box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
 }
+
 .game-details {
   color: #B8C6DC;
   font-weight: 500;
@@ -36,6 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .play-board {
   height: 100%;
   width: 100%;
@@ -43,9 +48,11 @@ body {
   background: #212837;
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
+
 .play-board .food {
   background: #FF003D;
 }
+
 .play-board .head {
   background: #60CBFF;
 }
@@ -54,6 +61,7 @@ body {
   display: none;
   justify-content: space-between;
 }
+
 .controls i {
   padding: 25px 0;
   text-align: center;
@@ -69,18 +77,47 @@ body {
     width: 90vmin;
     height: 115vmin;
   }
+
   .game-details {
     font-size: 1rem;
     padding: 15px 27px;
   }
+
   .controls {
     display: flex;
   }
+
   .controls i {
     padding: 15px 0;
     font-size: 1rem;
   }
 }
+
+/* New styles for different devices */
+/* For Phones */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 95vmin;
+    height: 95vmin;
+  }
+}
+
+/* For iPads */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .wrapper {
+    width: 70vmin;
+    height: 80vmin;
+  }
+}
+
+/* For Laptops */
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    width: 60vmin;
+    height: 65vmin;
+  }
+}
+
 /* Your existing CSS styles */
 
 /* New styles for the title-message */
@@ -93,4 +130,3 @@ body {
   color: black;
   z-index: 999; /* Ensure it's above the game grid */
 }
-
