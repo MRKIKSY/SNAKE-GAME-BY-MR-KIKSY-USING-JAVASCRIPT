@@ -122,11 +122,11 @@ body {
 
 /* New styles for the title-message */
 .title-message {
-  position: absolute;
+  position: auto;
   top: 10px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 0.5rem;
   color: black;
   z-index: 999; /* Ensure it's above the game grid */
 }
