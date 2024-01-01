@@ -126,7 +126,7 @@ body {
   top: 10px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   color: black;
   z-index: 999; /* Ensure it's above the game grid */
 }
